@@ -1,0 +1,6 @@
+---
+- name: build
+  hosts: buildserver
+  become: True
+  roles:
+    - build
