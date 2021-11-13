@@ -1,8 +1,9 @@
 ---
 - name: build docker image
   docker_image:
-    name: "http://192.168.122.41:8082/Myapp"
+    name: Myapp
     source: build
     build:
       path: "{{ Dockerfile_path }}"
     state: "present"
+  tags: "http://192.168.122.41:8082/Myapp"
