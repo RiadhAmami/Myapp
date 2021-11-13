@@ -1,3 +1,5 @@
 ---
-- name: build app
-  shell: ng build --prod
+- name: solve dependency
+  shell: npm install
+- name: build project
+  shell: ng build
