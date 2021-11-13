@@ -21,18 +21,21 @@ pipeline {
         stage('build app') {
             steps {
                script {
+                  echo "fd"
                }
             }
         }
         stage('build image') {
             steps {
                 script {
+                  echo "fd"
                 }
             }
         }
         stage('deploy image') {
             steps {
                 script {
+                  echo "fd"
                 }
             }
         }
