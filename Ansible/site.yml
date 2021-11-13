@@ -4,3 +4,8 @@
   become: True
   roles:
     - build
+- name: docker build
+  hosts: localhost
+  become: True
+  roles:
+    - docker
