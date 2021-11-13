@@ -1,1 +1,1 @@
-Dockerfile_path = "../../Dockerfile"
+Dockerfile_path: "../../Dockerfile"
