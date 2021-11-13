@@ -1,6 +1,6 @@
 ---
 - name: build
-  hosts: buildserver
+  hosts: localhost
   become: True
   roles:
     - build
