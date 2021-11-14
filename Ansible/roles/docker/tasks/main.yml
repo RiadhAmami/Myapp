@@ -4,6 +4,6 @@
     name: Myapp
     source: build
     build:
-      path: "{{ Dockerfile_path }}"
+      path: "{{ dockerpath }}"
     state: "present"
   tags: "http://192.168.122.41:8082/Myapp"
