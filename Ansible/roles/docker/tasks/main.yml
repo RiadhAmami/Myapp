@@ -1,6 +1,6 @@
 ---
 - name: build docker image
-    shell: "docker build -f {{ dockerpath }}/Dockerfile -t \"http://192.168.122.41:8082/Myapp\" {{ dockerpath }} "
+  shell: "docker build -f {{ dockerpath }}/Dockerfile -t \"http://192.168.122.41:8082/Myapp\" {{ dockerpath }} "
   #  docker_image:
   # name: Myapp
   # source: build
