@@ -1,4 +1,6 @@
 ---
+- name: install docker
+  pip: docker
 - name: build docker image
   docker_image:
     name: Myapp
