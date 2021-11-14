@@ -15,7 +15,7 @@ pipeline {
             steps {
                script {
                  sh "echo \"dockerpath: ${env.WORKSPACE} \" > Ansible/group_vars/all"
-                 sh "ansible-playbook Ansible/site.yml -i staging -vvv"
+                 sh " sudo ansible-playbook Ansible/site.yml -i staging -vvv"
                }
             }
         }
