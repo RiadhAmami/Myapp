@@ -1,12 +1,13 @@
 ---
 - name: build docker image
-  docker_image:
-    name: Myapp
-    source: build
-    build:
-      dockerfile: "{{ dockerpath }}/Dockerfile"
-      path: "{{ dockerpath }}"
-      pull: no
-    state: "present"
-    force_source: true
-  tags: "http://192.168.122.41:8082/Myapp"
+    shell: "docker build -f {{ dockerpath }}/Dockerfile -t \"http://192.168.122.41:8082/Myapp\" {{ dockerpath }} "
+  #  docker_image:
+  # name: Myapp
+  # source: build
+      # build:
+      #   dockerfile: "{{ dockerpath }}/Dockerfile"
+        #     path: "{{ dockerpath }}"
+        #   pull: no
+        # state: "present"
+      # force_source: true
+      #tags: "http://192.168.122.41:8082/Myapp"
