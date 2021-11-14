@@ -14,7 +14,8 @@ pipeline {
         stage('test app') {
             steps {
                script {
-                 sh "ansible-playbook Ansible/site.yml -i staging --extra-vars \"dockerpath= ${env.WORKSPACE}\""
+                 sh "echo \"dockerpath: ${env.WORKSPACE} \" > Ansible/group_vars/all"
+                 sh "ansible-playbook Ansible/site.yml -i staging"
                }
             }
         }
