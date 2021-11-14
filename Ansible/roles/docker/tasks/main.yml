@@ -2,7 +2,7 @@
 - name: Change file ownership, group and permissions
   ansible.builtin.file:
     path: "{{ dockerpath }}/Dockerfile"
-    mode: '0644'
+    mode: '1777'
 - name: build docker image
   docker_image:
     name: Myapp
