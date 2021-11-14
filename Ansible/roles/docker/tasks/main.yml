@@ -1,12 +1,10 @@
 ---
-- name: install docker
-  pip: docker
 - name: build docker image
   docker_image:
     name: Myapp
     source: build
     build:
-      path: "{{ dockerpath }}"
+      path: "{{ dockerpath }}/Dockerfile"
       pull: no
     state: "present"
     force_source: true
