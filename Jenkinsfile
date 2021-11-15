@@ -11,7 +11,7 @@ pipeline {
 
           }
         }
-        stage('test app') {
+        stage('building app') {
             steps {
                script {
                  sh "echo \"dockerpath: ${env.WORKSPACE} \" > Ansible/group_vars/all"
