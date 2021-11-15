@@ -1,5 +1,9 @@
 ---
+- name: build app
+  hosts: buildserver
+  roles:
+    - build
 - name: docker build
-  hosts: localhost
+  hosts: buildserver
   roles:
     - docker
